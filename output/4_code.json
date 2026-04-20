@@ -1,0 +1,53 @@
+{
+  "entry_path": "src/app/generated/page.jsx",
+  "components": [
+    "src/components/generated/NavbarSection.jsx",
+    "src/components/generated/HeroSection.jsx",
+    "src/components/generated/TrustSection.jsx",
+    "src/components/generated/ServicesSection.jsx",
+    "src/components/generated/ProcessSection.jsx",
+    "src/components/generated/PortfolioSection.jsx",
+    "src/components/generated/TestimonialsSection.jsx",
+    "src/components/generated/ContactSection.jsx",
+    "src/components/generated/FooterSection.jsx"
+  ],
+  "summary": {
+    "sections_implemented": [
+      "NavbarSection — sticky, backdrop blur, mobile AnimatePresence drawer, scroll shadow",
+      "HeroSection — 100svh fullscreen, parallax bg, sequential motion animations, dual CTA",
+      "TrustSection — deep green bg, IntersectionObserver counter roll-up, 4 KPI stats",
+      "ServicesSection — 2×2 card grid, hover gold border + shadow lift, lucide icons",
+      "ProcessSection — 5-step horizontal timeline (lg) / vertical (mobile), connector line",
+      "PortfolioSection — 3-col grid, AnimatePresence filter tabs, Image hover scale + overlay",
+      "TestimonialsSection — 3-col cards, Star fill icons, quote decoration, avatar Image",
+      "ContactSection — 2-col layout, controlled form with validation, submitted state",
+      "FooterSection — 3-col, brand badges, hover gold links"
+    ],
+    "shadcn_components_used": [
+      "shadcn/ui 미설치 — lucide-react 아이콘 + Tailwind CSS arbitrary values로 동등 구현",
+      "Button 패턴: <a> / <button> with inline style + onMouseEnter/Leave hover",
+      "Card 패턴: <article> with rounded-[8px] shadow border-bottom hover"
+    ],
+    "animations_used": [
+      "framer-motion motion.div initial/animate — HeroSection 배지·타이틀·서브·CTA 순차 등장",
+      "framer-motion whileInView — 모든 섹션 fade-up (once: true)",
+      "framer-motion AnimatePresence — NavbarSection 모바일 메뉴, PortfolioSection 필터 카드",
+      "framer-motion motion.div animate bounce — HeroSection 스크롤 인디케이터",
+      "framer-motion layout — PortfolioSection 그리드 필터 전환 레이아웃 애니메이션",
+      "IntersectionObserver + setInterval — TrustSection 카운터 롤업",
+      "window scroll + style.transform — HeroSection 배경 parallax"
+    ],
+    "estimated_lighthouse_score": {
+      "performance": 87,
+      "accessibility": 93,
+      "best_practices": 95
+    },
+    "known_limitations": [
+      "TypeScript 미설정 프로젝트 — .jsx로 작성 (tsconfig 추가 후 .tsx 마이그레이션 가능)",
+      "shadcn/ui 미설치 — 동등 패턴으로 직접 구현",
+      "Unsplash 이미지는 실제 서비스 시 자사 시공 사진으로 교체 필요",
+      "폼 submit은 백엔드 연동 없이 UI 상태 전환만 처리",
+      "select 요소 다크 배경 option 스타일은 브라우저별 차이 있음"
+    ]
+  }
+}
