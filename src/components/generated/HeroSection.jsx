@@ -45,14 +45,14 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6 w-full">
+      <div className="relative z-10 max-w-5xl xl:max-w-[1200px] mx-auto px-6 sm:px-10 md:px-16 lg:px-14 xl:px-6 w-full">
         <div className="max-w-[700px]">
           {/* 배지 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide mb-7"
+            className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide mb-5 sm:mb-7"
             style={{
               background: "rgba(184,134,78,0.18)",
               border: "1px solid rgba(184,134,78,0.55)",
@@ -67,10 +67,10 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 36 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35 }}
-            className="font-bold leading-[1.15] text-white mb-5"
+            className="font-bold leading-[1.15] text-white mb-4 sm:mb-5"
             style={{
               fontFamily: "'Noto Serif KR', serif",
-              fontSize: "clamp(2.5rem, 5vw, 4rem)",
+              fontSize: "clamp(1.85rem, 5.5vw, 4rem)",
             }}
           >
             공간이 바뀌면
@@ -85,7 +85,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="text-lg font-medium mb-3"
+            className="text-base sm:text-lg font-medium mb-2 sm:mb-3"
             style={{ color: "rgba(255,255,255,0.92)" }}
           >
             믿을 수 있는 시공, 투명한 견적, 2년 A/S 보증
@@ -96,11 +96,12 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.62 }}
-            className="text-base leading-relaxed mb-9"
+            className="text-sm sm:text-base leading-relaxed mb-7 sm:mb-9"
             style={{ color: "rgba(255,255,255,0.68)" }}
           >
             아파트 리모델링부터 상업공간 인테리어까지
-            <br />
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>
             15년 경력의 전문 팀이 처음부터 끝까지 함께합니다.
           </motion.p>
 
@@ -109,11 +110,11 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.78 }}
-            className="flex flex-wrap gap-4"
+            className="flex flex-wrap gap-3 sm:gap-4"
           >
             <a
               href="#contact"
-              className="inline-block px-8 py-[14px] rounded-[4px] font-semibold text-[15px] tracking-wide transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-block px-6 sm:px-8 py-3 sm:py-[14px] rounded-[4px] font-semibold text-sm sm:text-[15px] tracking-wide transition-all duration-200 hover:-translate-y-0.5"
               style={{
                 background: "#B8864E",
                 color: "#fff",
@@ -126,7 +127,7 @@ export default function HeroSection() {
             </a>
             <a
               href="#portfolio"
-              className="inline-block px-8 py-[14px] rounded-[4px] font-semibold text-[15px] tracking-wide transition-all duration-200 hover:bg-white/15"
+              className="inline-block px-6 sm:px-8 py-3 sm:py-[14px] rounded-[4px] font-semibold text-sm sm:text-[15px] tracking-wide transition-all duration-200 hover:bg-white/15"
               style={{
                 border: "2px solid rgba(255,255,255,0.6)",
                 color: "#fff",

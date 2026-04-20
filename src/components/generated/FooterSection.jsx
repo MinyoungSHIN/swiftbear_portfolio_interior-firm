@@ -14,7 +14,7 @@ export default function FooterSection() {
 
   return (
     <footer style={{ background: "#080E1A" }}>
-      <div className="max-w-[1200px] mx-auto px-6 pt-14 pb-8">
+      <div className="max-w-5xl xl:max-w-[1200px] mx-auto px-6 sm:px-8 md:px-12 lg:px-10 xl:px-6 pt-14 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* 브랜드 */}
           <div>

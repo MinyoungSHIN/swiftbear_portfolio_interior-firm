@@ -61,7 +61,7 @@ export default function PortfolioSection() {
 
   return (
     <section id="portfolio" className="py-24 md:py-32" style={{ background: "#fff" }}>
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-5xl xl:max-w-[1200px] mx-auto px-6 sm:px-8 md:px-12 lg:px-10 xl:px-6">
         {/* 헤더 */}
         <motion.header
           className="text-center mb-10"
@@ -151,10 +151,10 @@ export default function PortfolioSection() {
         >
           <a
             href="#contact"
-            className="inline-block px-8 py-[14px] rounded-[4px] font-semibold text-sm tracking-wide transition-all duration-200 hover:text-white"
+            className="inline-block px-8 py-[14px] rounded-[4px] font-semibold text-sm tracking-wide transition-all duration-200"
             style={{ border: "2px solid #1E293B", color: "#1E293B" }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = "#1E293B"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "#1E293B"; e.currentTarget.style.color = "#fff"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#1E293B"; }}
           >
             전체 포트폴리오 보기
           </a>

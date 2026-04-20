@@ -32,11 +32,15 @@ export default function NavbarSection() {
       style={{ background: "rgba(255,255,255,0.97)", backdropFilter: "blur(12px)", borderBottom: "1px solid #E2E8F0" }}
       aria-label="메인 네비게이션"
     >
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-5xl xl:max-w-[1200px] mx-auto px-6 sm:px-8 md:px-12 lg:px-10 xl:px-6">
         <div className="flex items-center justify-between h-[72px]">
           {/* 로고 */}
           <Link
             href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             className="text-xl font-bold tracking-[0.2em]"
             style={{ fontFamily: "var(--font-cormorant), 'Noto Serif KR', serif", color: "#1E293B", letterSpacing: "0.2em" }}
           >
@@ -93,7 +97,7 @@ export default function NavbarSection() {
             className="lg:hidden overflow-hidden border-t"
             style={{ borderColor: "#E2E8F0", background: "#fff" }}
           >
-            <div className="max-w-[1200px] mx-auto px-6 py-4 flex flex-col gap-1">
+            <div className="max-w-5xl xl:max-w-[1200px] mx-auto px-6 sm:px-8 py-4 flex flex-col gap-1">
               {navLinks.map((link) => (
                 <a
                   key={link.name}

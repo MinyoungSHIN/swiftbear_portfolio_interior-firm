@@ -38,7 +38,7 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-24 md:py-32" style={{ background: "#0F172A" }}>
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-5xl xl:max-w-[1200px] mx-auto px-6 sm:px-8 md:px-12 lg:px-10 xl:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-start">
 
           {/* 왼쪽 */}

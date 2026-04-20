@@ -50,7 +50,7 @@ function Counter({ target, suffix }) {
 export default function TrustSection() {
   return (
     <section aria-label="신뢰 지표" style={{ background: "#0F172A", padding: "64px 0" }}>
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-5xl xl:max-w-[1200px] mx-auto px-6 sm:px-8 md:px-12 lg:px-10 xl:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat, i) => (
             <motion.div

@@ -13,7 +13,7 @@ const steps = [
 export default function ProcessSection() {
   return (
     <section id="process" className="py-24 md:py-32" style={{ background: "#F8F7F5" }}>
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-5xl xl:max-w-[1200px] mx-auto px-6 sm:px-8 md:px-12 lg:px-10 xl:px-6">
         {/* 헤더 */}
         <motion.header
           className="text-center mb-16"
