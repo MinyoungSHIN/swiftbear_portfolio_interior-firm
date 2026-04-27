@@ -87,7 +87,7 @@ export default function ServicesSection() {
               </div>
               <h3
                 className="font-bold mb-3 text-[1.2rem]"
-                style={{ fontFamily: "Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif", color: "#0F172A" }}
+                style={{ fontFamily: "'Noto Serif KR', serif", color: "#0F172A" }}
               >
                 {svc.title}
               </h3>
