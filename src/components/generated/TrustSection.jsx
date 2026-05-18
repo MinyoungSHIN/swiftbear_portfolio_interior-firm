@@ -40,7 +40,7 @@ function Counter({ target, suffix }) {
     <span
       ref={ref}
       className="block font-bold leading-none mb-2"
-      style={{ fontFamily: "var(--font-cormorant), 'Noto Serif KR', serif", fontSize: "clamp(2rem, 4vw, 3rem)", color: "#B8864E" }}
+      style={{ fontFamily: "var(--font-cormorant), 'Noto Serif KR', serif", fontSize: "clamp(2rem, 4vw, 3rem)", color: "var(--color-cta)" }}
     >
       {count.toLocaleString()}{suffix}
     </span>

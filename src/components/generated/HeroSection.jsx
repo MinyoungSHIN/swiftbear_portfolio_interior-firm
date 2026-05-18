@@ -54,9 +54,9 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide mb-5 sm:mb-7"
             style={{
-              background: "rgba(184,134,78,0.18)",
-              border: "1px solid rgba(184,134,78,0.55)",
-              color: "#B8864E",
+              background: "rgba(var(--color-cta-rgb),0.18)",
+              border: "1px solid rgba(var(--color-cta-rgb),0.55)",
+              color: "var(--color-cta)",
             }}
           >
             ✦ 15년 경력 · 1,200건 이상 완공
@@ -75,7 +75,7 @@ export default function HeroSection() {
           >
             공간이 바뀌면
             <br />
-            <em className="not-italic" style={{ color: "#B8864E" }}>
+            <em className="not-italic" style={{ color: "var(--color-cta)" }}>
               삶이 달라집니다
             </em>
           </motion.h1>
@@ -116,12 +116,12 @@ export default function HeroSection() {
               href="#contact"
               className="inline-block px-6 sm:px-8 py-3 sm:py-[14px] rounded-[4px] font-semibold text-sm sm:text-[15px] tracking-wide transition-all duration-200 hover:-translate-y-0.5"
               style={{
-                background: "#B8864E",
+                background: "var(--color-cta)",
                 color: "#fff",
-                boxShadow: "0 4px 20px rgba(184,134,78,0.45)",
+                boxShadow: "0 4px 20px rgba(var(--color-cta-rgb),0.45)",
               }}
               onMouseEnter={(e) => { e.currentTarget.style.background = "#9B6E3A"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#B8864E"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "var(--color-cta)"; }}
             >
               무료 상담 신청하기
             </a>

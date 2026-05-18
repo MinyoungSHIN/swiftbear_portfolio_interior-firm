@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Home, Coffee, Briefcase, Bath } from "lucide-react";
@@ -38,7 +38,7 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "#B8864E" }}>
+          <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "var(--color-cta)" }}>
             Our Services
           </span>
           <h2
@@ -70,7 +70,7 @@ export default function ServicesSection() {
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-4px)";
                 e.currentTarget.style.boxShadow = "0 12px 32px rgba(30,41,59,0.10)";
-                e.currentTarget.style.borderBottom = "3px solid #B8864E";
+                e.currentTarget.style.borderBottom = "3px solid var(--color-accent)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "translateY(0)";

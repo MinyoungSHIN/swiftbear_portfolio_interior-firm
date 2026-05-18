@@ -22,7 +22,7 @@ export default function ProcessSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "#B8864E" }}>
+          <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "var(--color-cta)" }}>
             How We Work
           </span>
           <h2
@@ -57,7 +57,7 @@ export default function ProcessSection() {
                 style={{
                   background: "#1E293B",
                   border: "3px solid #F8F7F5",
-                  boxShadow: "0 0 0 2px #B8864E",
+                  boxShadow: "0 0 0 2px var(--color-cta)",
                   fontFamily: "var(--font-cormorant), serif",
                   fontSize: "1rem",
                   letterSpacing: "0.05em",
@@ -91,7 +91,7 @@ export default function ProcessSection() {
                 className="w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm text-white flex-shrink-0"
                 style={{
                   background: "#1E293B",
-                  boxShadow: "0 0 0 2px #B8864E",
+                  boxShadow: "0 0 0 2px var(--color-cta)",
                   fontFamily: "var(--font-cormorant), serif",
                 }}
                 aria-hidden="true"

@@ -6,11 +6,19 @@
 
   /* SpaceOn 디자인 토큰 — Deep Slate + Champagne Gold */
   --so-primary:    #1E293B;
-  --so-secondary:  #B8864E;
+  --so-secondary:  #e4ce0d;
   --so-accent:     #F8F7F5;
   --so-dark:       #0F172A;
   --so-text-1:     #0F172A;
   --so-text-2:     #64748B;
+
+  /* 확장 색상 토큰 */
+  --color-cta:         #C9A96E;        /* 버튼, 포인트 텍스트 */
+  --color-cta-rgb:     201, 169, 110;  /* rgba() 알파 사용용 */
+  --color-accent:      #FFD700;        /* 별점, 뱃지, 태그 */
+  --color-accent-rgb:  255, 215, 0;    /* rgba() 알파 사용용 */
+  --color-bg-dark:     #1A1A1A;        /* 다크 배경 */
+  --color-text-light:  #F5F0E8;        /* 밝은 텍스트 */
 }
 
 @theme inline {

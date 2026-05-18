@@ -48,7 +48,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-4" style={{ color: "#B8864E" }}>
+            <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-4" style={{ color: "var(--color-cta)" }}>
               Free Consultation
             </span>
             <h2
@@ -70,10 +70,10 @@ export default function ContactSection() {
                 <li key={label} className="flex items-start gap-3">
                   <div
                     className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(184,134,78,0.18)", border: "1px solid rgba(184,134,78,0.4)" }}
+                    style={{ background: "rgba(var(--color-cta-rgb),0.18)", border: "1px solid rgba(var(--color-cta-rgb),0.4)" }}
                     aria-hidden="true"
                   >
-                    <Icon className="w-4 h-4" style={{ color: "#B8864E" }} />
+                    <Icon className="w-4 h-4" style={{ color: "var(--color-cta)" }} />
                   </div>
                   <div>
                     <p className="text-[11px] font-semibold tracking-wide uppercase mb-0.5" style={{ color: "rgba(255,255,255,0.4)" }}>
@@ -101,7 +101,7 @@ export default function ContactSection() {
               <div className="flex flex-col items-center justify-center py-12 text-center">
                 <div
                   className="w-16 h-16 rounded-full flex items-center justify-center text-2xl mb-4"
-                  style={{ background: "#B8864E", color: "#fff" }}
+                  style={{ background: "var(--color-cta)", color: "#fff" }}
                 >
                   ✓
                 </div>
@@ -124,7 +124,7 @@ export default function ContactSection() {
                       required autoComplete="name"
                       value={form.name} onChange={handleChange}
                       style={inputStyle}
-                      onFocus={(e) => { e.target.style.borderColor = "#B8864E"; }}
+                      onFocus={(e) => { e.target.style.borderColor = "var(--color-cta)"; }}
                       onBlur={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.18)"; }}
                     />
                   </div>
@@ -137,7 +137,7 @@ export default function ContactSection() {
                       required autoComplete="tel"
                       value={form.phone} onChange={handleChange}
                       style={inputStyle}
-                      onFocus={(e) => { e.target.style.borderColor = "#B8864E"; }}
+                      onFocus={(e) => { e.target.style.borderColor = "var(--color-cta)"; }}
                       onBlur={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.18)"; }}
                     />
                   </div>
@@ -152,7 +152,7 @@ export default function ContactSection() {
                       id="spaceType" name="spaceType" required
                       value={form.spaceType} onChange={handleChange}
                       style={{ ...inputStyle, appearance: "none" }}
-                      onFocus={(e) => { e.target.style.borderColor = "#B8864E"; }}
+                      onFocus={(e) => { e.target.style.borderColor = "var(--color-cta)"; }}
                       onBlur={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.18)"; }}
                     >
                       <option value="" disabled>선택하세요</option>
@@ -171,7 +171,7 @@ export default function ContactSection() {
                       id="budget" name="budget"
                       value={form.budget} onChange={handleChange}
                       style={{ ...inputStyle, appearance: "none" }}
-                      onFocus={(e) => { e.target.style.borderColor = "#B8864E"; }}
+                      onFocus={(e) => { e.target.style.borderColor = "var(--color-cta)"; }}
                       onBlur={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.18)"; }}
                     >
                       <option value="" disabled>선택하세요</option>
@@ -192,7 +192,7 @@ export default function ContactSection() {
                     placeholder="공간 규모, 원하는 스타일, 기타 요청사항을 자유롭게 적어주세요."
                     value={form.message} onChange={handleChange}
                     style={{ ...inputStyle, resize: "vertical" }}
-                    onFocus={(e) => { e.target.style.borderColor = "#B8864E"; }}
+                    onFocus={(e) => { e.target.style.borderColor = "var(--color-cta)"; }}
                     onBlur={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.18)"; }}
                   />
                 </div>
@@ -200,9 +200,9 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   className="w-full py-4 rounded-[4px] font-semibold text-[15px] tracking-wide transition-all duration-200 hover:-translate-y-0.5"
-                  style={{ background: "#B8864E", color: "#fff", boxShadow: "0 4px 20px rgba(184,134,78,0.4)" }}
+                  style={{ background: "var(--color-cta)", color: "#fff", boxShadow: "0 4px 20px rgba(var(--color-cta-rgb),0.4)" }}
                   onMouseEnter={(e) => { e.currentTarget.style.background = "#9B6E3A"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = "#B8864E"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = "var(--color-cta)"; }}
                 >
                   상담 신청 완료하기
                 </button>

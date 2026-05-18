@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "#B8864E" }}>
+          <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "var(--color-cta)" }}>
             Reviews
           </span>
           <h2
@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
               {/* 큰따옴표 장식 */}
               <span
                 className="absolute top-4 left-6 font-serif leading-none select-none"
-                style={{ fontSize: "5rem", color: "#B8864E", opacity: 0.18, fontFamily: "Georgia, serif" }}
+                style={{ fontSize: "5rem", color: "var(--color-accent)", opacity: 0.18, fontFamily: "Georgia, serif" }}
                 aria-hidden="true"
               >
                 &ldquo;
@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
               {/* 별점 */}
               <div className="flex gap-0.5 mb-4" aria-label="별점 5점">
                 {Array.from({ length: 5 }).map((_, idx) => (
-                  <Star key={idx} className="w-4 h-4 fill-current" style={{ color: "#B8864E" }} aria-hidden="true" />
+                  <Star key={idx} className="w-4 h-4 fill-current" style={{ color: "var(--color-accent)" }} aria-hidden="true" />
                 ))}
               </div>
 

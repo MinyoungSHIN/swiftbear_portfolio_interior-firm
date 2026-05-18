@@ -22,7 +22,7 @@ export default function FooterSection() {
               className="text-xl font-bold tracking-[0.2em] mb-3"
               style={{ fontFamily: "var(--font-cormorant), 'Noto Serif KR', serif", color: "#fff" }}
             >
-              SPACE <span style={{ color: "#B8864E" }}>ON</span>
+              SPACE <span style={{ color: "var(--color-cta)" }}>ON</span>
             </p>
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.4)", maxWidth: "280px" }}>
               15년의 경험으로 완성한 공간, 스페이스온이 함께합니다. 처음부터 끝까지 투명하고 믿을 수 있는 인테리어를 약속드립니다.
@@ -39,7 +39,7 @@ export default function FooterSection() {
                 <li key={name}>
                   <a
                     href="#services"
-                    className="text-sm transition-colors duration-200 hover:text-[#B8864E]"
+                    className="text-sm transition-colors duration-200 hover:text-[var(--color-cta)]"
                     style={{ color: "rgba(255,255,255,0.45)" }}
                   >
                     {name}
@@ -59,7 +59,7 @@ export default function FooterSection() {
                 <li key={label}>
                   <a
                     href={href}
-                    className="text-sm transition-colors duration-200 hover:text-[#B8864E]"
+                    className="text-sm transition-colors duration-200 hover:text-[var(--color-cta)]"
                     style={{ color: "rgba(255,255,255,0.45)" }}
                   >
                     {label}
@@ -83,7 +83,7 @@ export default function FooterSection() {
               <span
                 key={badge}
                 className="text-[10px] px-3 py-1 rounded-full"
-                style={{ border: "1px solid rgba(184,134,78,0.35)", color: "#B8864E" }}
+                style={{ border: "1px solid rgba(var(--color-accent-rgb),0.35)", color: "var(--color-accent)" }}
               >
                 {badge}
               </span>

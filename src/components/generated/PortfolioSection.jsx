@@ -70,7 +70,7 @@ export default function PortfolioSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "#B8864E" }}>
+          <span className="inline-block text-xs font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "var(--color-cta)" }}>
             Portfolio
           </span>
           <h2
@@ -129,7 +129,7 @@ export default function PortfolioSection() {
                     background: "linear-gradient(to top, rgba(15,23,42,0.90) 0%, transparent 55%)",
                   }}
                 >
-                  <p className="text-xs font-semibold tracking-widest uppercase mb-1" style={{ color: "#B8864E" }}>
+                  <p className="text-xs font-semibold tracking-widest uppercase mb-1" style={{ color: "var(--color-accent)" }}>
                     {item.cat}
                   </p>
                   <p className="text-sm font-semibold leading-snug text-white">

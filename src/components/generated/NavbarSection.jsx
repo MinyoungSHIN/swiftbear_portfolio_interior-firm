@@ -44,7 +44,7 @@ export default function NavbarSection() {
             className="text-xl font-bold tracking-[0.2em]"
             style={{ fontFamily: "var(--font-cormorant), 'Noto Serif KR', serif", color: "#1E293B", letterSpacing: "0.2em" }}
           >
-            SPACE <span style={{ color: "#B8864E" }}>ON</span>
+            SPACE <span style={{ color: "var(--color-cta)" }}>ON</span>
           </Link>
 
           {/* 데스크톱 메뉴 */}
@@ -53,7 +53,7 @@ export default function NavbarSection() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium transition-colors duration-200 hover:text-[#1E293B]"
+                className="text-base font-medium transition-colors duration-200 hover:text-[#1E293B]"
                 style={{ color: "#64748B" }}
               >
                 {link.name}
@@ -61,10 +61,10 @@ export default function NavbarSection() {
             ))}
             <a
               href="#contact"
-              className="text-sm font-semibold px-5 py-[10px] rounded-[4px] transition-all duration-200 hover:-translate-y-0.5"
-              style={{ background: "#B8864E", color: "#fff", boxShadow: "0 2px 8px rgba(184,134,78,0.35)" }}
+              className="text-base font-semibold px-5 py-[10px] rounded-[4px] transition-all duration-200 hover:-translate-y-0.5"
+              style={{ background: "var(--color-cta)", color: "#fff", boxShadow: "0 2px 8px rgba(var(--color-cta-rgb),0.35)" }}
               onMouseEnter={(e) => { e.currentTarget.style.background = "#9B6E3A"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#B8864E"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "var(--color-cta)"; }}
             >
               무료 상담 신청
             </a>
@@ -113,7 +113,7 @@ export default function NavbarSection() {
                 href="#contact"
                 onClick={handleNavClick}
                 className="mt-3 block text-center py-3 rounded-[4px] font-semibold text-sm"
-                style={{ background: "#B8864E", color: "#fff" }}
+                style={{ background: "var(--color-cta)", color: "#fff" }}
               >
                 무료 상담 신청
               </a>
